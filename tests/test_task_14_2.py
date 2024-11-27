@@ -3,6 +3,7 @@ from io import StringIO
 import sys
 from src.task_14_2 import Product, Category
 
+
 class TestProduct(unittest.TestCase):
 
     def setUp(self):
@@ -67,5 +68,3 @@ class TestCategory(unittest.TestCase):
     def test_get_products(self):
         expected_output = f"{self.product1}, {self.product1.price} руб. Остаток: {self.product1.quantity} шт.\n{self.product2}, {self.product2.price} руб. Остаток: {self.product2.quantity} шт."
         self.assertEqual(self.category.get_products(), expected_output)
-
-

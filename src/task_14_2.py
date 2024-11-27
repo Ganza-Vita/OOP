@@ -22,7 +22,7 @@ class Product:
 
     @classmethod
     def new_product(cls, product_info):
-        """ Создает экземпляр Product из словаря. """
+        """ Создает экземпляр Product из словаря """
         return cls(
             name=product_info['name'],
             description=product_info['description'],
