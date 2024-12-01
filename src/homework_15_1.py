@@ -64,7 +64,6 @@ class Category:
         """ Геттер для получения продуктов. """
         return self.get_products()
 
-
     def get_products(self):
         """ Возвращает строковое представление всех товаров в категории. """
         return '\n'.join(str(product) for product in self.__products)
