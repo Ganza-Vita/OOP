@@ -1,4 +1,4 @@
-from src.homework_15_2 import Product, Category
+from src.homework_15_1 import Product, Category
 
 
 if __name__ == '__main__':
