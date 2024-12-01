@@ -1,6 +1,7 @@
 import unittest
 from src.homework_15_1 import Product, Category
 
+
 class TestProduct(unittest.TestCase):
     def setUp(self):
         """ Создание объекта продукта для использования в тестах. """
@@ -32,6 +33,7 @@ class TestProduct(unittest.TestCase):
         total_price = self.product + product2
         self.assertEqual(total_price, (80 * 15) + (60 * 25))
 
+
 class TestCategory(unittest.TestCase):
     def setUp(self):
         """ Создание категории для использования в тестах. """
@@ -58,6 +60,7 @@ class TestCategory(unittest.TestCase):
     def test_string_representation(self):
         """ Проверка строкового представления категории. """
         self.assertEqual(str(self.category), "Фрукты, количество продуктов: 40 шт.")
+
 
 if __name__ == '__main__':
     unittest.main()
