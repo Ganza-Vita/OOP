@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 
+
 class BaseProduct(ABC):
 
     @abstractmethod
@@ -141,7 +142,3 @@ class LawnGrass(Product):
         """ Возвращает информацию о газонной траве. """
         return (f"{super().get_info()}, Страна: {self.country}, "
                 f"Период всходов: {self.germination_period}, Цвет: {self.color}")
-
-
-
-
